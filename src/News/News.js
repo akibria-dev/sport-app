@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "../News/News.css";
-
 class News extends Component {
   constructor(props) {
     super(props);
@@ -14,7 +13,7 @@ class News extends Component {
       "https://newsapi.org/v2/top-headlines?country=gb&category=sports&apiKey=009148816e8946eaafeaf3fdc9630e12"
     )
       .then((response) => response.json())
-      .then((data) => this.setState({ sportsNews: data.articles }));
+      .then((response) => this.setState({ sportsNews: response.articles }));
   }
 
   render() {
@@ -22,11 +21,12 @@ class News extends Component {
       <div className="news-container">
         {this.state.sportsNews.map((sportNews) => (
           <div className="sports-news-container">
-            <p className="title">{sportNews.title}</p>
-            <a href={sportNews.url} target="_blank" rel="noreferrer">
-              {"Details News"}
-            </a>
-            <br />
+            <div className="title">
+              {sportNews.title}
+              <a href={sportNews.url} target="_self" rel="noreferrer">
+                {" >Detail News"}
+              </a>
+            </div>
           </div>
         ))}
       </div>

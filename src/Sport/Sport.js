@@ -1,5 +1,6 @@
 // import News from "./News";
 // import { useState } from "react";
+
 import { useNavigate } from "react-router-dom";
 import News from "../News/News";
 import Video from "../Video/Video";
@@ -9,7 +10,16 @@ function Sport() {
 
   return (
     <container className="l-grid">
-      <div className="header">SPORT</div>
+      <div className="header">
+        <ul>
+          <li className="allsports" onClick={() => navigate("/")}>
+            ALL SPORTS
+          </li>
+          <li className="mysports" onClick={() => navigate("/fav")}>
+            MY SPORTS
+          </li>
+        </ul>
+      </div>
       <div className="left-column">
         <div className="inner-left-row">
           <div className="inner-left-box">Home</div>
@@ -17,7 +27,6 @@ function Sport() {
             Football
           </div>
           <div className="inner-left-box" onClick={() => navigate("/cricket")}>
-            {/* <Cricket /> */}
             Cricket
           </div>
           <div className="inner-left-box" onClick={() => navigate("/formula1")}>

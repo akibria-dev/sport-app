@@ -11,6 +11,7 @@ import Golf from "./Golf/Golf";
 import Boxing from "./Boxing/Boxing";
 import Athletics from "./Athletics/Athletics";
 import SportsList from "./SportsList/SportsList";
+import Favourite from "./Favourite/Favourite";
 function App() {
   return (
     <div className="App">
@@ -26,6 +27,7 @@ function App() {
         <Route path="/boxing" element={<Boxing />}></Route>
         <Route path="/athletics" element={<Athletics />}></Route>
         <Route path="/fav" element={<SportsList />}></Route>
+        <Route path="/favsports" element={<Favourite />}></Route>
       </Routes>
     </div>
   );

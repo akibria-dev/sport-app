@@ -10,7 +10,7 @@ function SportsList() {
           <li className="allsports" onClick={() => navigate("/")}>
             ALL SPORTS
           </li>
-          <li className="mysports" onClick={() => navigate("/fav")}>
+          <li className="mysports" onClick={() => navigate("/favsports")}>
             MY SPORTS
           </li>
         </ul>

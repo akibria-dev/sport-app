@@ -34,6 +34,9 @@ body {
     cursor: pointer;
     margin-left: 60px;
     transition: all 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   .inner-left-box:hover {
     background-color: #6a74e4;
@@ -55,6 +58,7 @@ body {
     background: #98d53d;
     overflow: auto;
     height: 100%;
+    color: black;
   }
 
   .header ul {

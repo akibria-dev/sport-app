@@ -52,39 +52,37 @@ function Favourite() {
       <div className="left-column">
         <div className="favList">
           <h1>Sports List</h1>
-          <ul>
-            {favorites.map((item, i) => (
-              <li key={i}>
-                {item.name}{" "}
-                <div className="buttonFav">
-                  <button
-                    onClick={() => {
-                      handleFavorite(item.id);
-                    }}
-                    style={{ backgroundColor: "black", color: "lime" }}
-                    // style={{ backgroundColor: active ? "black" : "limegreen" }}
-                  >
-                    {item.favorite === true ? "Remove" : "Add"}
-                  </button>
-                </div>
-              </li>
-            ))}
-          </ul>
+
+          {favorites.map((item, i) => (
+            <div className="list" key={i}>
+              {item.name}{" "}
+              <div
+                className="buttonFav"
+                onClick={() => {
+                  handleFavorite(item.id);
+                }}
+              >
+                {item.favorite === true ? "Remove" : "Add"}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
       <div className="center-column">
         <h1>Favourites List</h1>
+
         <div className="fav-list-added">
           {favorites.map((item) =>
             item.favorite === true ? (
-              <li
+              <div
+                className="addedtoList"
                 key={item.id}
                 onClick={() => {
                   navigate("/" + item.name);
                 }}
               >
                 {item.name}
-              </li>
+              </div>
             ) : null
           )}
         </div>

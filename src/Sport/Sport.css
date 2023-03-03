@@ -89,11 +89,16 @@ body {
     display: flex;
     grid-auto-flow: column;
     gap: 60px;
-    margin-left: 30%;
+    margin-left: 40%;
     font-weight: bold;
   }
+  .allsports,
+  .mysports {
+    color: white;
+  }
 
-  .header ul:hover {
+  .header ul .mysports:hover,
+  .header ul .allsports:hover {
     text-decoration: underline;
     text-decoration-color: lime;
     color: lime;

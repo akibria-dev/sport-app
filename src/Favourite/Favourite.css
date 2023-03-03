@@ -16,14 +16,20 @@ body {
 
   .favList {
     display: grid;
-    grid-template-rows: repeat(10, 1fr);
-    border-radius: 15px;
-    /* border: 2px solid #729C34;
-         min-width: 40px;
-        min-height: 40px; */
-    gap: 10px;
+    /* grid-template-rows: repeat(10, 1fr); */
+    /* border-radius: 15px;
+    border: 2px solid #729c34; */
+    /* min-width: 50px;
+    min-height: 50px; */
+    gap: 30px;
     color: black;
     padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: x-large;
+  }
+  .buttonFav {
+    display: block;
+    gap: 30px;
   }
   .fav-list-added {
     width: 150px;

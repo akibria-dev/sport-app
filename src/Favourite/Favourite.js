@@ -17,6 +17,7 @@ const data = [
 
 function Favourite() {
   const [favorites, setFavorites] = useState([]);
+  const [active, setActive] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -29,13 +30,13 @@ function Favourite() {
   }, [favorites]);
 
   function handleFavorite(id) {
+    // setActive(!active);
     const newFavorites = favorites.map((item) => {
       return item.id === id ? { ...item, favorite: !item.favorite } : item;
     });
 
     setFavorites(newFavorites);
   }
-
   return (
     <container className="l-grid">
       <div className="header">
@@ -55,13 +56,17 @@ function Favourite() {
             {favorites.map((item, i) => (
               <li key={i}>
                 {item.name}{" "}
-                <button
-                  onClick={() => {
-                    handleFavorite(item.id);
-                  }}
-                >
-                  {item.favorite === true ? "Remove" : "Add"}
-                </button>
+                <div className="buttonFav">
+                  <button
+                    onClick={() => {
+                      handleFavorite(item.id);
+                    }}
+                    style={{ backgroundColor: "black", color: "lime" }}
+                    // style={{ backgroundColor: active ? "black" : "limegreen" }}
+                  >
+                    {item.favorite === true ? "Remove" : "Add"}
+                  </button>
+                </div>
               </li>
             ))}
           </ul>

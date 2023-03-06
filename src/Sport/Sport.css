@@ -84,24 +84,29 @@ body {
   .videos:hover {
     transform: scale(1.1);
   }
-  .header ul {
+
+  .header ul 
+  /* .mysports, */
+  /* .logout { */ {
+    color: white;
+  }
+  .allsports,
+  .mysports,
+  .logout {
     list-style-type: none;
     display: flex;
     grid-auto-flow: column;
-    gap: 60px;
-    margin-left: 40%;
+    gap: 15px;
     font-weight: bold;
-  }
-  .allsports,
-  .mysports {
     color: white;
   }
-
-  .header ul .mysports:hover,
-  .header ul .allsports:hover {
+  .mysports:hover,
+  .allsports:hover,
+  .logout:hover {
     text-decoration: underline;
     text-decoration-color: lime;
-    color: lime;
-    cursor: pointer;
   }
+  /* .logout {
+    align-self: flex-end;
+  } */
 }

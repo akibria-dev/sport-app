@@ -1,3 +1,5 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 import { StrictMode } from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";

@@ -18,6 +18,14 @@ function Sport() {
           <li className="mysports" onClick={() => navigate("/fav")}>
             MY SPORTS
           </li>
+
+          <li
+            style={{ fontSize: 20 }}
+            className="logout"
+            onClick={() => navigate("/home")}
+          >
+            Log out
+          </li>
         </ul>
       </div>
       <div className="left-column">

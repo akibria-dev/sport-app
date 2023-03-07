@@ -61,15 +61,12 @@ body {
     font-size: xx-large;
     padding: 30px;
   }
-  .c-left-column {
-    background-color: #36da75;
-  }
-  .c-center-column {
-    background: #36da75;
-  }
+  .c-left-column,
+  .c-center-column,
   .c-right-column {
-    background: #36da75;
+    background-color: #36da75;
     height: 100vh;
+    overflow: auto;
   }
 
   .cricket-news-container {

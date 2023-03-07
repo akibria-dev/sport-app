@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
-import News from "../News/News";
+import Video from "../Video/Video";
 import "./Formula1.css";
-
+import F1News from "../Formula1/F1News";
 function Formula1() {
   const navigate = useNavigate();
   return (
@@ -18,10 +18,10 @@ function Formula1() {
           <div className="f1-inner-left-box">Teams & Drivers</div>
         </div>
       </div>
-      <div className="f1-center-column"></div>
-      <div className="f1-right-column">
-        <News />
+      <div className="f1-center-column">
+        <F1News />
       </div>
+      <div className="f1-right-column">{<Video />}</div>
     </container>
   );
 }

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
+import Favourite from "../src/Favourite/Favourite";
 
 export const Login = () => {
   const navigate = useNavigate();
@@ -7,7 +8,10 @@ export const Login = () => {
     email: "",
     password: "",
   });
+  const [loggedIn, setLoggedIn] = useState(false);
+
   const handleLogin = (e) => {
+    setLoggedIn(true);
     e.preventDefault();
     const loggeduser = JSON.parse(localStorage.getItem("user"));
     if (
@@ -74,9 +78,12 @@ export const Login = () => {
                         </label>
                       </div>
                       <div className="d-flex justify-content-center">
+                        {/* {loggedIn && <Favourite />} */}
+
                         <button
                           type="submit"
                           className="btn btn-success btn-block btn-lg gradient-custom-4 text-body text-white"
+                          // onClick={handleLogin}
                         >
                           Login
                         </button>

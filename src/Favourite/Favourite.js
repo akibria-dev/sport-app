@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import Video from "../Video/Video";
 import "./Favourite.css";
-// import "./styles.css";
 import { useNavigate } from "react-router-dom";
-const data = [
+const dataList = [
   { id: 1, name: "Football" },
   { id: 2, name: "Cricket" },
   { id: 3, name: "Formula1" },
@@ -13,24 +11,25 @@ const data = [
   { id: 6, name: "Golf" },
   { id: 7, name: "Boxing" },
   { id: 8, name: "Athletics" },
+  { id: 9, name: "NBA" },
+  { id: 10, name: "Basketball" },
 ];
-
-function Favourite() {
-  const [favorites, setFavorites] = useState([]);
-  const [active, setActive] = useState(false);
+function Favourite({ user }) {
+  const [favorites, setFavorites] = useState(dataList);
   const navigate = useNavigate();
-
   useEffect(() => {
-    const data = window.localStorage.getItem("favorites");
+    const data = localStorage.getItem("favorites");
     if (data !== null) setFavorites(JSON.parse(data));
   }, []);
-
   useEffect(() => {
-    window.localStorage.setItem("favorites", JSON.stringify(favorites));
+    localStorage.setItem("favorites", JSON.stringify(favorites));
   }, [favorites]);
 
+  // useEffect(() => {
+  //   const isLoggedIn=
+  // })
+
   function handleFavorite(id) {
-    // setActive(!active);
     const newFavorites = favorites.map((item) => {
       return item.id === id ? { ...item, favorite: !item.favorite } : item;
     });
@@ -44,8 +43,15 @@ function Favourite() {
           <li className="allsports" onClick={() => navigate("/")}>
             ALL SPORTS
           </li>
-          <li className="mysports" onClick={() => navigate("/fav")}>
+          <li className="mysports" onClick={() => navigate("/favourite")}>
             MY SPORTS
+          </li>
+          <li
+            style={{ fontSize: 20 }}
+            className="logout"
+            onClick={() => navigate("/home")}
+          >
+            Log out
           </li>
         </ul>
       </div>

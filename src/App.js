@@ -33,7 +33,7 @@ function App() {
         <Route path="/boxing" element={<Boxing />}></Route>
         <Route path="/athletics" element={<Athletics />}></Route>
         {/* <Route path="/fav" element={<SportsList />}></Route> */}
-        <Route path="/fav" element={<Favourite />}></Route>
+        <Route path="/favourite" element={<Favourite />}></Route>
       </Routes>
     </div>
   );

@@ -32,7 +32,6 @@ function App() {
         <Route path="/golf" element={<Golf />}></Route>
         <Route path="/boxing" element={<Boxing />}></Route>
         <Route path="/athletics" element={<Athletics />}></Route>
-        {/* <Route path="/fav" element={<SportsList />}></Route> */}
         <Route path="/favourite" element={<Favourite />}></Route>
         <Route path="/formula1/standings" element={<Standings />}></Route>
       </Routes>

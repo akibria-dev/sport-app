@@ -37,10 +37,6 @@ class CricketNews extends Component {
                 Venue:{cricket.venue}, Date:
                 {cricket.date}
               </p>
-
-              {/* <p>Date:{cricket.date}</p> */}
-              {/* <p>Teams:{cricket.teams}</p> */}
-              {/* {cricket.teamInfo} */}
             </div>
           </div>
         ))}

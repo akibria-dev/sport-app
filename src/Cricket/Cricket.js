@@ -9,7 +9,7 @@ function Cricket() {
 
   return (
     <container className="cl-grid">
-      <div className="c-header">Cricket Results and News</div>
+      <div className="c-header">Cricket News and Results</div>
       <div className="c-left-column">
         <div className="c-inner-left-row">
           <div className="c-inner-left-box" onClick={() => navigate("/")}>

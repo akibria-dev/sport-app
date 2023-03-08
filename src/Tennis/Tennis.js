@@ -6,7 +6,7 @@ function Tennis() {
   const navigate = useNavigate();
   return (
     <container className="tennisl-grid">
-      <div className="tennis-header">Tennis Results and News</div>
+      <div className="tennis-header">Tennis News and Results</div>
       <div className="tennis-left-column">
         <div className="tennis-inner-left-row">
           <div className="tennis-inner-left-box" onClick={() => navigate("/")}>

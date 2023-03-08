@@ -1,6 +1,5 @@
-// import News from "./News";
-// import { useState } from "react";
 import { BiFootball, BiHome, BiRun } from "react-icons/bi";
+import CommentBox from "../Comments/Comments";
 import {
   MdSportsCricket,
   MdSportsRugby,
@@ -83,6 +82,7 @@ function Sport() {
       <div className="center-column">
         Latest News
         <News />
+        <CommentBox />
         {/* <iframe
           src="https://www.bbc.co.uk/sport/football/63953188/"
           title="W3Schools Free Online Web Tutorials"

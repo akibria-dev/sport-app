@@ -10,7 +10,7 @@ class News extends Component {
   }
   componentDidMount() {
     fetch(
-      "https://newsapi.org/v2/top-headlines?country=gb&category=sports&apiKey=009148816e8946eaafeaf3fdc9630e12"
+      "https://newsapi.org/v2/top-headlines?country?&category=sports&apiKey=009148816e8946eaafeaf3fdc9630e12"
     )
       .then((response) => response.json())
       .then((response) => this.setState({ sportsNews: response.articles }));

@@ -1,14 +1,15 @@
-import React, { Component } from "react";
-import "./F1.css";
-class F1driverStandings extends Component {
-  constructor(props) {
-    super(props);
+import React, { useState } from "react";
 
-    this.state = {
-      f1News: [],
-    };
-  }
-  componentDidMount() {
+import "./F1.css";
+
+function F1DriverStandings() {
+  const [data, setData] = useState([]);
+  const [inputValue, setInputValue] = useState();
+  const handleInputChange = (event) => {
+    setInputValue(event.target.value);
+  };
+
+  const callApi = () => {
     const options = {
       method: "GET",
       headers: {
@@ -17,33 +18,47 @@ class F1driverStandings extends Component {
       },
     };
     fetch(
-      "https://f1-live-motorsport-data.p.rapidapi.com/drivers/standings/2022",
+      `https://f1-live-motorsport-data.p.rapidapi.com/drivers/standings/${inputValue}`,
       options
     )
       .then((response) => response.json())
-      .then((response) => this.setState({ f1News: response.results }))
+      .then((data) => setData(data.results))
       .catch((err) => console.error(err));
-  }
+  };
+  return (
+    <div className="f1-driver-news-container">
+      <input
+        type="text"
+        placeholder="Select a year"
+        style={{ backgroundColor: "blue", fontWeight: "bold", color: "white" }}
+        value={inputValue}
+        onChange={handleInputChange}
+      />
 
-  render() {
-    return (
-      <div className="f1-driver-news-container">
-        {this.state.f1News.map((driverinfo) => (
-          <div className="f1-driverStandings-container">
-            <div className="f1-driver-title">
-              <div key={driverinfo.id}>
-                <p>Position:{driverinfo.position}</p>
-                <p>Points:{driverinfo.points}</p>
-                <p>Driver Name:{driverinfo.driver_name}</p>
-                <p>Team Name:{driverinfo.team_name}</p>
-                <p>Nationality: {driverinfo.nationality}</p>
-                <p>Season:{driverinfo.season}</p>
-              </div>
+      <button
+        style={{ backgroundColor: "cyan", fontWeight: "bold" }}
+        onClick={callApi}
+      >
+        Results
+      </button>
+      <p></p>
+      <p style={{ fontWeight: "bolder", fontSize: "30px" }}>Driver Standings</p>
+      {data.map((driverinfo) => (
+        <div className="f1-driverStandings-container">
+          <div className="f1-driver-title">
+            <div key={driverinfo.id}>
+              <p>Position:{driverinfo.position}</p>
+              <p>Points:{driverinfo.points}</p>
+              <p>Driver Name:{driverinfo.driver_name}</p>
+              <p>Team Name:{driverinfo.team_name}</p>
+              <p>Nationality: {driverinfo.nationality}</p>
+              <p>Season:{driverinfo.season}</p>
             </div>
           </div>
-        ))}
-      </div>
-    );
-  }
+        </div>
+      ))}
+    </div>
+  );
 }
-export default F1driverStandings;
+
+export default F1DriverStandings;

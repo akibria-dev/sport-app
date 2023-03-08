@@ -6,7 +6,7 @@ function Golf() {
   const navigate = useNavigate();
   return (
     <container className="golfl-grid">
-      <div className="golf-header">Football Results and News</div>
+      <div className="golf-header">Football News and Results</div>
       <div className="golf-left-column">
         <div className="golf-inner-left-row">
           <div className="golf-inner-left-box" onClick={() => navigate("/")}>

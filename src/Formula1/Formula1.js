@@ -6,7 +6,7 @@ function Formula1() {
   const navigate = useNavigate();
   return (
     <container className="f1l-grid">
-      <div className="f1-header">Formula1 Results and News</div>
+      <div className="f1-header">Formula1 News ans Results</div>
       <div className="f1-left-column">
         <div className="f1-inner-left-row">
           <div className="f1-inner-left-box" onClick={() => navigate("/")}>

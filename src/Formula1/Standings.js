@@ -6,7 +6,7 @@ function DriverStanding() {
   const navigate = useNavigate();
   return (
     <container className="standingl-grid">
-      <div className="standing-header">Formula1 Results and News</div>
+      <div className="standing-header">Formula1 News and Results</div>
       <div className="standing-left-column">
         <div className="standing-inner-left-row">
           <div

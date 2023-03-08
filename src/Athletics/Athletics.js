@@ -6,7 +6,7 @@ function Athletics() {
   const navigate = useNavigate();
   return (
     <container className="athletics-grid">
-      <div className="athletics-header">Athletics Results and News</div>
+      <div className="athletics-header">Athletics News and Results</div>
       <div className="athletics-left-column">
         <div className="athletics-inner-left-row">
           <div

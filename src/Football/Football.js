@@ -1,13 +1,12 @@
 import { useNavigate } from "react-router-dom";
 import News from "../News/News";
-import Video from "../Video/Video";
 import "./Football.css";
-
+import Video from "../Video/Video";
 function Football() {
   const navigate = useNavigate();
   return (
     <container className="fl-grid">
-      <div className="f-header">Football Results and News</div>
+      <div className="f-header">Football News and Results</div>
       <div className="f-left-column">
         <div className="f-inner-left-row">
           <div className="f-inner-left-box" onClick={() => navigate("/")}>
@@ -27,7 +26,7 @@ function Football() {
         Latest News
         <News />
       </div>
-      <div className="f-right-column">Latest Videos{<Video />}</div>
+      <div className="f-right-column">{<Video />}</div>
     </container>
   );
 }

@@ -25,9 +25,15 @@ function Favourite({ user }) {
     localStorage.setItem("favorites", JSON.stringify(favorites));
   }, [favorites]);
 
-  // useEffect(() => {
-  //   const isLoggedIn=
-  // })
+  useEffect(() => {
+    if (user !== null && user !== undefined && favorites.length > 0) {
+      const prevUser = JSON.parse(localStorage.getItem("currentUser"));
+      if (prevUser !== null && prevUser !== undefined && prevUser !== user) {
+        setFavorites([]);
+      }
+      localStorage.setItem("currentUser", JSON.stringify(user));
+    }
+  }, [favorites.length, user]);
 
   function handleFavorite(id) {
     const newFavorites = favorites.map((item) => {

@@ -10,8 +10,8 @@ import Tennis from "./Tennis/Tennis";
 import Golf from "./Golf/Golf";
 import Boxing from "./Boxing/Boxing";
 import Athletics from "./Athletics/Athletics";
-import SportsList from "./SportsList/SportsList";
 import Favourite from "./Favourite/Favourite";
+import Standings from "./Formula1/Standings";
 import { Home } from "./pages/Home";
 import { Login } from "./Login";
 import { Register } from "./Register";
@@ -34,6 +34,7 @@ function App() {
         <Route path="/athletics" element={<Athletics />}></Route>
         {/* <Route path="/fav" element={<SportsList />}></Route> */}
         <Route path="/favourite" element={<Favourite />}></Route>
+        <Route path="/formula1/standings" element={<Standings />}></Route>
       </Routes>
     </div>
   );

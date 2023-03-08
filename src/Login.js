@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
-import Favourite from "../src/Favourite/Favourite";
 
 export const Login = () => {
   const navigate = useNavigate();

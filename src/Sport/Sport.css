@@ -34,6 +34,7 @@ body {
     cursor: pointer;
     margin-left: 60px;
     transition: all 0.5s ease;
+    display: inline-block;
   }
   .inner-left-box:hover {
     background-color: #6a74e4;
@@ -58,18 +59,24 @@ body {
     padding: 30px;
   }
   .left-column {
-    background-color: #98d53d;
+    /* background-color: #98d53d; */
     overflow: auto;
   }
   .center-column {
     background: #98d53d;
     overflow: auto;
     height: 100%;
+    color: black;
+    font-size: x-large;
+    font-weight: bold;
   }
   .right-column {
     background: #98d53d;
     height: 100vh;
     overflow: auto;
+    color: black;
+    font-size: x-large;
+    font-weight: bold;
   }
   img {
     width: 180px;

@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import News from "../News/News";
+import Video from "../Video/Video";
 import "./Football.css";
 
 function Football() {
@@ -22,10 +23,11 @@ function Football() {
           <div className="f-inner-left-box">Leagues & Cups</div>
         </div>
       </div>
-      <div className="f-center-column"></div>
-      <div className="f-right-column">
+      <div className="f-center-column">
+        Latest News
         <News />
       </div>
+      <div className="f-right-column">Latest Videos{<Video />}</div>
     </container>
   );
 }

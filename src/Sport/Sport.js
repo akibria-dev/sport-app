@@ -1,6 +1,15 @@
 // import News from "./News";
 // import { useState } from "react";
-
+import { BiFootball, BiHome, BiRun } from "react-icons/bi";
+import {
+  MdSportsCricket,
+  MdSportsRugby,
+  MdSportsTennis,
+  MdSportsGolf,
+} from "react-icons/md";
+import { GiRaceCar, GiBoxingGloveSurprise } from "react-icons/gi";
+// import { "fa-sharp fa-solid fa-futbol" } from "@fortawesome/free-solid-svg-icons";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import News from "../News/News";
 import Video from "../Video/Video";
@@ -30,37 +39,49 @@ function Sport() {
       </div>
       <div className="left-column">
         <div className="inner-left-row">
-          <div className="inner-left-box">Home</div>
+          <div className="inner-left-box">
+            {" "}
+            <BiHome />
+            Home
+          </div>
           <div className="inner-left-box" onClick={() => navigate("/football")}>
+            <BiFootball />
             Football
           </div>
           <div className="inner-left-box" onClick={() => navigate("/cricket")}>
+            <MdSportsCricket />
             Cricket
           </div>
           <div className="inner-left-box" onClick={() => navigate("/formula1")}>
+            <GiRaceCar />
             Formula1
           </div>
           <div className="inner-left-box" onClick={() => navigate("/rugby")}>
+            <MdSportsRugby />
             Rugby
           </div>
           <div className="inner-left-box" onClick={() => navigate("/tennis")}>
+            <MdSportsTennis />
             Tennis
           </div>
           <div className="inner-left-box" onClick={() => navigate("/golf")}>
-            Golf
+            <MdSportsGolf /> Golf
           </div>
           <div className="inner-left-box" onClick={() => navigate("/boxing")}>
+            <GiBoxingGloveSurprise />
             Boxing
           </div>
           <div
             className="inner-left-box"
             onClick={() => navigate("/athletics")}
           >
+            <BiRun />
             Athletics
           </div>
         </div>
       </div>
       <div className="center-column">
+        Latest News
         <News />
         {/* <iframe
           src="https://www.bbc.co.uk/sport/football/63953188/"
@@ -74,7 +95,7 @@ function Sport() {
          
         ></iframe> */}
       </div>
-      <div className="right-column">{<Video />}</div>
+      <div className="right-column">Latest Videos{<Video />}</div>
     </container>
   );
 }

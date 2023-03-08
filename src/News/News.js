@@ -24,7 +24,7 @@ class News extends Component {
             <div className="title">
               {sportNews.title}
               <a href={sportNews.url} target="_self" rel="noreferrer">
-                {" >Detail News"}
+                <p>{" Detail News"}</p>
               </a>
             </div>
           </div>

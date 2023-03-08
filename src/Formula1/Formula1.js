@@ -13,7 +13,12 @@ function Formula1() {
             Home
           </div>
           <div className="f1-inner-left-box">Results</div>
-          <div className="f1-inner-left-box">Standings</div>
+          <div
+            className="f1-inner-left-box"
+            onClick={() => navigate("/formula1/standings")}
+          >
+            Standings
+          </div>
           <div className="f1-inner-left-box">Calender</div>
           <div className="f1-inner-left-box">Teams & Drivers</div>
         </div>
@@ -21,7 +26,7 @@ function Formula1() {
       <div className="f1-center-column">
         <F1News />
       </div>
-      <div className="f1-right-column">{<Video />}</div>
+      <div className="f1-right-column">Latest Videos{<Video />}</div>
     </container>
   );
 }

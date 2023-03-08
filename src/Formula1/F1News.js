@@ -29,7 +29,7 @@ class F1News extends Component {
           <div className="f1sports-news-container">
             <div className="f1title">
               <div key={f1newsinfo.id}>
-                Name of the race:{f1newsinfo.name}
+                Race:{f1newsinfo.name}
                 <p>Country:{f1newsinfo.location.country}</p>
                 <p>City:{f1newsinfo.location.city}</p>
               </div>

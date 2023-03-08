@@ -30,12 +30,16 @@ class CricketNews extends Component {
         {this.state.cricketNews.map((cricket) => (
           <div className="cricket-News-container">
             <div className="title">
-              {cricket.name}
-              {cricket.matchType}
-              {cricket.status}
-              {cricket.venue}
-              {cricket.date}
-              {cricket.teams}
+              <p>Team Playing:{cricket.name}</p>
+              <p>Match Type:{cricket.matchType}</p>
+              <p>Status:{cricket.status}</p>
+              <p>
+                Venue:{cricket.venue}, Date:
+                {cricket.date}
+              </p>
+
+              {/* <p>Date:{cricket.date}</p> */}
+              {/* <p>Teams:{cricket.teams}</p> */}
               {/* {cricket.teamInfo} */}
             </div>
           </div>

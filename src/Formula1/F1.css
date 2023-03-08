@@ -4,22 +4,26 @@
   box-sizing: border-box;
 }
 
-.f1-news-container {
+.f1-news-container,
+.f1-driver-news-container {
   margin: 0;
   width: auto;
   height: 100%;
   overflow: auto;
+  text-align: center;
 }
-.f1sports-news-container {
+.f1sports-news-container,
+.f1-driverStandings-container {
   display: inline-flex;
   margin: 10px;
   text-align: center;
   border: 2px solid black;
   border-radius: 10px;
   width: 250px;
-  height: 150px;
+  height: 250px;
 }
-.f1title {
+.f1title,
+.f1-driver-title {
   font-size: 1rem;
   font-weight: bold;
   color: rgb(62, 8, 112);

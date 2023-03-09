@@ -6,7 +6,7 @@ export const Home = () => {
   const userName = JSON.parse(localStorage.getItem("user"));
   const handleLogout = () => {
     localStorage.removeItem("loggedin");
-    navigate("/");
+    navigate("/login");
   };
   return (
     <section

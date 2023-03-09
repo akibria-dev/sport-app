@@ -24,7 +24,8 @@ function App() {
       <Routes>
         <Route path="/main" element={<Sport />}></Route>
         <Route path="/home" element={<Home />}></Route>
-        <Route path="/" element={<Login />}></Route>
+        <Route path="/" element={<Register />}></Route>
+        <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
         <Route path="/football" element={<Football />}></Route>
         <Route path="/cricket" element={<Cricket />}></Route>

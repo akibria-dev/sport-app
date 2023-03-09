@@ -68,7 +68,11 @@ body {
     height: 100vh;
     overflow: auto;
   }
-
+  .c-center-column {
+    font-size: larger;
+    color: darkblue;
+    font-weight: bolder;
+  }
   .cricket-news-container {
     margin: 0;
     width: auto;
@@ -79,11 +83,12 @@ body {
     display: inline-flex;
     margin: 20px;
     text-align: center;
-    border: 2px solid black;
+    /* border: 2px solid black;*/
     border-radius: 10px;
+    border-left: 2px solid black;
     border-bottom: 2px solid black;
     width: 250px;
-    height: 250px;
+    height: 300px;
   }
   .title {
     font-size: 1rem;

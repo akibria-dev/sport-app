@@ -12,17 +12,19 @@ import Boxing from "./Boxing/Boxing";
 import Athletics from "./Athletics/Athletics";
 import Favourite from "./Favourite/Favourite";
 import Standings from "./Formula1/Standings";
+
 import { Home } from "./pages/Home";
 import { Login } from "./Login";
 import { Register } from "./Register";
+import TeamStanding from "./Formula1/TeamPosition";
 function App() {
   return (
     <div className="App">
       <Routes></Routes>
       <Routes>
-        <Route path="/" element={<Sport />}></Route>
+        <Route path="/main" element={<Sport />}></Route>
         <Route path="/home" element={<Home />}></Route>
-        <Route path="/login" element={<Login />}></Route>
+        <Route path="/" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
         <Route path="/football" element={<Football />}></Route>
         <Route path="/cricket" element={<Cricket />}></Route>
@@ -34,6 +36,10 @@ function App() {
         <Route path="/athletics" element={<Athletics />}></Route>
         <Route path="/favourite" element={<Favourite />}></Route>
         <Route path="/formula1/standings" element={<Standings />}></Route>
+        <Route
+          path="/formula1/teamstandings"
+          element={<TeamStanding />}
+        ></Route>
       </Routes>
     </div>
   );

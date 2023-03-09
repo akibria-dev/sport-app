@@ -9,7 +9,10 @@ function Golf() {
       <div className="golf-header">Football News and Results</div>
       <div className="golf-left-column">
         <div className="golf-inner-left-row">
-          <div className="golf-inner-left-box" onClick={() => navigate("/")}>
+          <div
+            className="golf-inner-left-box"
+            onClick={() => navigate("/main")}
+          >
             Home
           </div>
           <div className="golf-inner-left-box">Leaderboard</div>

@@ -9,7 +9,10 @@ function Boxing() {
       <div className="boxing-header">Boxing News and Results</div>
       <div className="boxing-left-column">
         <div className="boxing-inner-left-row">
-          <div className="boxing-inner-left-box" onClick={() => navigate("/")}>
+          <div
+            className="boxing-inner-left-box"
+            onClick={() => navigate("/main")}
+          >
             Home
           </div>
           <div className="boxing-inner-left-box">Results&Schedule</div>

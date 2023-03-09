@@ -1,8 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import Video from "../Video/Video";
 import "./Standings.css";
-import F1DriverStandings from "../Formula1/DriverStandings";
-function DriverStanding() {
+
+import F1TeamNews from "./Teams";
+function TeamStanding() {
   const navigate = useNavigate();
   return (
     <container className="standingl-grid">
@@ -32,10 +33,10 @@ function DriverStanding() {
         </div>
       </div>
       <div className="standing-center-column">
-        <F1DriverStandings />
+        <F1TeamNews />
       </div>
       <div className="standing-right-column">Latest Videos{<Video />}</div>
     </container>
   );
 }
-export default DriverStanding;
+export default TeamStanding;

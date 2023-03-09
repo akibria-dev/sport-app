@@ -12,7 +12,7 @@ function Cricket() {
       <div className="c-header">Cricket News and Results</div>
       <div className="c-left-column">
         <div className="c-inner-left-row">
-          <div className="c-inner-left-box" onClick={() => navigate("/")}>
+          <div className="c-inner-left-box" onClick={() => navigate("/main")}>
             Home
           </div>
           <div className="c-inner-left-box">Scores & Fixtures</div>
@@ -26,6 +26,7 @@ function Cricket() {
         </div>
       </div>
       <div className="c-center-column">
+        Cricket Matches
         <CricketNews />
       </div>
       <div className="c-right-column">

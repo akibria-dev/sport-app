@@ -38,7 +38,9 @@ export const Login = () => {
               <div className="col-12 col-md-9 col-lg-7 col-xl-6">
                 <div className="card" style={{ borderRadius: "15px" }}>
                   <div className="card-body p-5">
-                    <h2 className="text-uppercase text-center mb-5">Login</h2>
+                    <h2 className="text-uppercase text-center mb-5">
+                      Login to enter the site
+                    </h2>
                     <form onSubmit={handleLogin}>
                       <div className="form-outline mb-4">
                         <input

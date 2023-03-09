@@ -9,7 +9,7 @@ function Formula1() {
       <div className="f1-header">Formula1 News ans Results</div>
       <div className="f1-left-column">
         <div className="f1-inner-left-row">
-          <div className="f1-inner-left-box" onClick={() => navigate("/")}>
+          <div className="f1-inner-left-box" onClick={() => navigate("/main")}>
             Home
           </div>
           <div className="f1-inner-left-box">Results</div>
@@ -17,9 +17,14 @@ function Formula1() {
             className="f1-inner-left-box"
             onClick={() => navigate("/formula1/standings")}
           >
-            Standings
+            Driver Standings
           </div>
-          <div className="f1-inner-left-box">Calender</div>
+          <div
+            className="f1-inner-left-box"
+            onClick={() => navigate("/formula1/teamstandings")}
+          >
+            Team Standings
+          </div>
           <div className="f1-inner-left-box">Teams & Drivers</div>
         </div>
       </div>

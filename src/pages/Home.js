@@ -1,12 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router";
-
+import "./Home.css";
 export const Home = () => {
   const navigate = useNavigate();
   const userName = JSON.parse(localStorage.getItem("user"));
   const handleLogout = () => {
     localStorage.removeItem("loggedin");
-    navigate("/login");
+    navigate("/");
   };
   return (
     <section
@@ -24,7 +24,7 @@ export const Home = () => {
                 <div class="card-body p-5">
                   <h2
                     class="text-uppercase text-center mb-5"
-                    onClick={() => navigate("/")}
+                    onClick={() => navigate("/main")}
                   >
                     Enter to the sports world
                   </h2>

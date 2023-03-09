@@ -1,5 +1,5 @@
 import { BiFootball, BiHome, BiRun } from "react-icons/bi";
-import CommentBox from "../Comments/Comments";
+// import CommentBox from "../Comments/Comments";
 import {
   MdSportsCricket,
   MdSportsRugby,
@@ -20,7 +20,7 @@ function Sport() {
     <container className="l-grid">
       <div className="header">
         <ul>
-          <li className="allsports" onClick={() => navigate("/")}>
+          <li className="allsports" onClick={() => navigate("/main")}>
             ALL SPORTS
           </li>
           <li className="mysports" onClick={() => navigate("/favourite")}>
@@ -82,7 +82,6 @@ function Sport() {
       <div className="center-column">
         Latest News
         <News />
-        <CommentBox />
         {/* <iframe
           src="https://www.bbc.co.uk/sport/football/63953188/"
           title="W3Schools Free Online Web Tutorials"

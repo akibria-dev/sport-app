@@ -9,7 +9,7 @@ function Football() {
       <div className="f-header">Football News and Results</div>
       <div className="f-left-column">
         <div className="f-inner-left-row">
-          <div className="f-inner-left-box" onClick={() => navigate("/")}>
+          <div className="f-inner-left-box" onClick={() => navigate("/main")}>
             Home
           </div>
           <div className="f-inner-left-box">Scores & Fixtures</div>

@@ -9,7 +9,10 @@ function Tennis() {
       <div className="tennis-header">Tennis News and Results</div>
       <div className="tennis-left-column">
         <div className="tennis-inner-left-row">
-          <div className="tennis-inner-left-box" onClick={() => navigate("/")}>
+          <div
+            className="tennis-inner-left-box"
+            onClick={() => navigate("/main")}
+          >
             Home
           </div>
           <div className="tennis-inner-left-box">Live Scores</div>

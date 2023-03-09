@@ -11,7 +11,7 @@ function Athletics() {
         <div className="athletics-inner-left-row">
           <div
             className="athletics-inner-left-box"
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/main")}
           >
             Home
           </div>

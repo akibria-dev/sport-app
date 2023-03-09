@@ -9,7 +9,7 @@ function Rugby() {
       <div className="r-header">Rugby News and Results</div>
       <div className="r-left-column">
         <div className="r-inner-left-row">
-          <div className="r-inner-left-box" onClick={() => navigate("/")}>
+          <div className="r-inner-left-box" onClick={() => navigate("/main")}>
             Home
           </div>
           <div className="r-inner-left-box">Scores & Fixtures</div>

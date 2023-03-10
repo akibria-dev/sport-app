@@ -30,6 +30,7 @@ function Cricket() {
         <CricketNews />
       </div>
       <div className="c-right-column">
+        Latest News
         <News />
       </div>
     </container>

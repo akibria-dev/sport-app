@@ -26,7 +26,7 @@ function Football() {
         Latest News
         <News />
       </div>
-      <div className="f-right-column">{<Video />}</div>
+      <div className="f-right-column">Latest Videos{<Video />}</div>
     </container>
   );
 }

@@ -65,5 +65,8 @@ body {
   .f1-right-column {
     background: #3dc6d5;
     height: 100vh;
+    font-size: larger;
+    color: darkblue;
+    font-weight: bolder;
   }
 }

@@ -64,4 +64,9 @@ body {
     background: #3dc6d5;
     height: 100vh;
   }
+  .standing-right-column {
+    font-size: larger;
+    color: darkblue;
+    font-weight: bolder;
+  }
 }

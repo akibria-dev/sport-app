@@ -68,7 +68,8 @@ body {
     height: 100vh;
     overflow: auto;
   }
-  .c-center-column {
+  .c-center-column,
+  .c-right-column {
     font-size: larger;
     color: darkblue;
     font-weight: bolder;

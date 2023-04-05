@@ -56,12 +56,12 @@
   
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/akibria12/sport-app.git"
+    "url": "git+https://github.com/akibria-dev/sport-app.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/akibria12/sport-app/issues"
+    "url": "https://github.com/akibria-dev/sport-app/issues"
   }
 }

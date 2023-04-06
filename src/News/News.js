@@ -19,16 +19,20 @@ class News extends Component {
   render() {
     return (
       <div className="news-container">
-        {this.state.sportsNews.map((sportNews) => (
-          <div className="sports-news-container">
-            <div className="title">
-              {sportNews.title}
-              <a href={sportNews.url} target="_self" rel="noreferrer">
-                <p>{" Detail News"}</p>
-              </a>
+        {this.state.sportsNews ? (
+          this.state.sportsNews.map((sportNews) => (
+            <div className="sports-news-container">
+              <div className="title">
+                {sportNews.title}
+                <a href={sportNews.url} target="_self" rel="noreferrer">
+                  <p>{" Detail News"}</p>
+                </a>
+              </div>
             </div>
-          </div>
-        ))}
+          ))
+        ) : (
+          <h1>Loading..</h1>
+        )}
       </div>
     );
   }

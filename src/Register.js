@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
+import { Link } from "react-router-dom";
 
 export const Register = () => {
   const navigate = useNavigate();
@@ -98,9 +99,11 @@ export const Register = () => {
                       </div>
                       <p className="text-center tect-muted mt-5 mb-0">
                         Have already an account?
-                        <a href="/login" className="fw-bold text-body">
-                          <u>Login here</u>
-                        </a>
+                        <Link to="/login">
+                          <div className="fw-bold text-body">
+                            <u>Login here</u>
+                          </div>
+                        </Link>
                       </p>
                     </form>
                   </div>

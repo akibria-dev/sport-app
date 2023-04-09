@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
-
+import { Link } from "react-router-dom";
 export const Login = () => {
   const navigate = useNavigate();
   const [input, setInput] = useState({
@@ -91,9 +91,11 @@ export const Login = () => {
                       </div>
                       <p className="text-center tect-muted mt-5 mb-0">
                         Don't have an account?
-                        <a href="/register" className="fw-bold text-body">
-                          <u>Register here</u>
-                        </a>
+                        <Link to="/register">
+                          <div className="fw-bold text-body">
+                            <u>Register here</u>
+                          </div>
+                        </Link>
                       </p>
                     </form>
                   </div>
